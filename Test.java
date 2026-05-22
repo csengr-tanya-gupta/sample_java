@@ -7,7 +7,7 @@ public class Test {
     int result = a*b;
     System.out.println("The sum is " +result);
     System.out.println("Tanya Gupta");
-    System.out.println("with ngrok");
+    System.out.println("with ngrok part2");
     
   }
   public static void main(String[] args)
