@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    
+    stages {
+        stage('Clone') {
+            steps {
+                git 'https://github.com/csengr-tanya-gupta/sample_java.git'
+            }
+        }
+        
+        stage('Hello') {
+            steps {
+                sh '''
+                javac Test.java
+                java Test
+                '''
+            }
+        }
+    }
+}
